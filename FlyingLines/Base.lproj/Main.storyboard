@@ -51,8 +51,8 @@
                                 <color key="textColor" red="0.60622513262599464" green="0.60622513262599464" blue="0.60622513262599464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cmJ-pG-Rdc" userLabel="Left">
-                                <rect key="frame" x="-36" y="290" width="95" height="243"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cmJ-pG-Rdc" userLabel="Left">
+                                <rect key="frame" x="66" y="290" width="95" height="243"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rE5-hg-ogQ" userLabel="Upper senders">
                                         <rect key="frame" x="8" y="31" width="15" height="180"/>
@@ -169,8 +169,8 @@
                                     <constraint firstItem="rE5-hg-ogQ" firstAttribute="leading" secondItem="cmJ-pG-Rdc" secondAttribute="leading" constant="8" id="xlB-Lo-cRs"/>
                                 </constraints>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cgl-rC-jf0" userLabel="right">
-                                <rect key="frame" x="317" y="290" width="95" height="243"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cgl-rC-jf0" userLabel="right">
+                                <rect key="frame" x="260" y="290" width="95" height="243"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Mzo-Mi-fxU" userLabel="Upper senders">
                                         <rect key="frame" x="72" y="32" width="15" height="180"/>
@@ -500,10 +500,15 @@
                                     <constraint firstAttribute="width" secondItem="7YZ-Kf-1Up" secondAttribute="height" multiplier="202:15" id="eRR-9M-3BD"/>
                                 </constraints>
                             </stackView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uTw-g8-lTf">
+                                <rect key="frame" x="68" y="79" width="25" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="cmJ-pG-Rdc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-52" id="1cS-B6-nLX"/>
+                            <constraint firstItem="cmJ-pG-Rdc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="1cS-B6-nLX"/>
                             <constraint firstItem="Cdb-f6-V60" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="77" id="3Nh-HZ-8Oi"/>
                             <constraint firstItem="msO-LO-mTa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="7SD-jH-kyJ"/>
                             <constraint firstAttribute="bottom" secondItem="Cdb-f6-V60" secondAttribute="bottom" constant="-50" id="DRT-D1-4o9"/>
@@ -511,7 +516,7 @@
                             <constraint firstItem="7YZ-Kf-1Up" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="IJR-f7-SN1"/>
                             <constraint firstAttribute="trailing" secondItem="Cdb-f6-V60" secondAttribute="trailing" constant="80" id="KCb-s1-Gjc"/>
                             <constraint firstItem="Yi0-NU-fIS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Mhi-7w-pEN"/>
-                            <constraint firstAttribute="trailing" secondItem="cgl-rC-jf0" secondAttribute="trailing" constant="-37" id="UXa-OL-VYQ"/>
+                            <constraint firstAttribute="trailing" secondItem="cgl-rC-jf0" secondAttribute="trailing" constant="20" id="UXa-OL-VYQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7YZ-Kf-1Up" secondAttribute="bottom" constant="763" id="XHl-1E-lAc"/>
                             <constraint firstItem="hhk-TT-cFT" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="XSL-aC-ECH"/>
                             <constraint firstItem="cmJ-pG-Rdc" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="msO-LO-mTa" secondAttribute="trailing" id="Ytn-x7-wcQ"/>
@@ -523,17 +528,60 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="D1" destination="1jh-xn-SAV" id="8Ae-VZ-RFS"/>
+                        <outlet property="D10" destination="94W-nS-5NU" id="NTJ-Ob-xNW"/>
+                        <outlet property="D11" destination="UmK-Ok-Hy9" id="wOf-Em-RJ6"/>
+                        <outlet property="D12" destination="7Eg-H6-zkv" id="9V2-jF-KbR"/>
+                        <outlet property="D2" destination="SrW-bv-I7I" id="HZV-LJ-aTG"/>
+                        <outlet property="D3" destination="yd0-t3-iRD" id="Ui8-zu-W6d"/>
+                        <outlet property="D4" destination="OSE-ij-1OV" id="tJk-8T-VAu"/>
+                        <outlet property="D5" destination="Z9o-e2-cCH" id="rPS-1t-bRm"/>
+                        <outlet property="D6" destination="NLY-Fd-mJ7" id="HAT-8q-9AY"/>
+                        <outlet property="D7" destination="v4B-oO-zWS" id="rEY-1s-fp4"/>
+                        <outlet property="D8" destination="agN-PX-c4d" id="fsi-al-UbZ"/>
+                        <outlet property="D9" destination="i86-JN-S91" id="GBX-yW-VHh"/>
+                        <outlet property="L1" destination="M25-hN-7AS" id="Aua-Hl-bz5"/>
+                        <outlet property="L10" destination="MmW-K5-pfJ" id="cFB-Y9-YCD"/>
+                        <outlet property="L11" destination="xMS-Ot-jEl" id="8O2-KQ-BrF"/>
+                        <outlet property="L12" destination="ApG-3U-PeT" id="kIp-Eq-lmY"/>
+                        <outlet property="L2" destination="1h7-QX-kC5" id="vip-6i-TXj"/>
+                        <outlet property="L3" destination="57Y-5n-c3y" id="MRX-5T-ngB"/>
+                        <outlet property="L4" destination="SDE-FH-mxc" id="yFE-h7-5bK"/>
+                        <outlet property="L5" destination="liI-d1-IvC" id="MY3-f9-hGY"/>
+                        <outlet property="L6" destination="KzS-EO-wZf" id="1cb-O8-JjI"/>
+                        <outlet property="L7" destination="Ill-6W-9uw" id="odP-AT-ht6"/>
+                        <outlet property="L8" destination="jBT-Pf-mY8" id="Itz-7U-UTU"/>
+                        <outlet property="L9" destination="vXC-oo-sHW" id="CqG-yp-k5w"/>
+                        <outlet property="R1" destination="0f6-qi-jk3" id="Je0-Ya-GYY"/>
+                        <outlet property="R10" destination="Ou1-Zc-ZOf" id="FzG-ZS-dGd"/>
+                        <outlet property="R11" destination="zgQ-2v-Anp" id="lSE-SV-2Ap"/>
+                        <outlet property="R12" destination="sdz-5Q-ghQ" id="7v0-tX-XwB"/>
+                        <outlet property="R2" destination="hRZ-sn-wDn" id="y9A-oX-4La"/>
+                        <outlet property="R3" destination="YpW-gV-MVI" id="teQ-NN-SmQ"/>
+                        <outlet property="R4" destination="9bC-kK-N9M" id="GDw-ZH-Ypd"/>
+                        <outlet property="R5" destination="sZG-c2-5zq" id="BlA-WT-2p7"/>
+                        <outlet property="R6" destination="vee-9D-x9q" id="pUV-rQ-r3Y"/>
+                        <outlet property="R7" destination="fd0-J1-qjy" id="9vI-Ob-9ck"/>
+                        <outlet property="R8" destination="e2s-c7-AXg" id="3SW-xm-cBg"/>
+                        <outlet property="R9" destination="vaE-Dk-8xg" id="Omb-R8-wm4"/>
                         <outlet property="StayDurationSlider" destination="8Bh-zf-BsJ" id="gUm-WS-Duc"/>
+                        <outlet property="U1" destination="dyp-2G-0hq" id="Icr-Lg-86q"/>
+                        <outlet property="U10" destination="Daz-Ui-Rm2" id="nNE-6Z-8Ej"/>
+                        <outlet property="U11" destination="uaS-Ij-0os" id="9VQ-km-jWi"/>
+                        <outlet property="U12" destination="kOS-eM-Xd6" id="tjf-ts-yYq"/>
+                        <outlet property="U2" destination="0AE-av-ZXZ" id="OIe-nm-GTv"/>
+                        <outlet property="U3" destination="Lyy-71-qYt" id="DIh-NW-VP5"/>
+                        <outlet property="U4" destination="BeQ-TD-fMO" id="fXd-4b-2E5"/>
+                        <outlet property="U5" destination="ZmW-zd-fF6" id="RPs-Ym-FC9"/>
+                        <outlet property="U6" destination="VdC-vj-XRC" id="R2q-sB-U24"/>
+                        <outlet property="U7" destination="r8l-3d-sTz" id="v48-OC-t3e"/>
+                        <outlet property="U8" destination="Ah2-xy-DGf" id="qnf-Zy-AN4"/>
+                        <outlet property="U9" destination="hZ0-5i-VYJ" id="xRs-dl-uom"/>
                         <outlet property="fallinSpeedSlider" destination="1BD-Nw-J0Q" id="BOr-gi-Lbm"/>
                         <outlet property="fallingSpeedLabel" destination="kbS-fZ-z1s" id="uRY-1P-vAk"/>
-                        <outlet property="prototypeVIewLeft" destination="VdC-vj-XRC" id="zoB-t2-h7H"/>
-                        <outlet property="prototypeView" destination="Lyy-71-qYt" id="mpE-hr-nsf"/>
-                        <outlet property="prototypeView0" destination="dyp-2G-0hq" id="MKU-DH-zDd"/>
-                        <outlet property="prototypekp" destination="ZmW-zd-fF6" id="pwW-od-BaM"/>
-                        <outlet property="prototypekp2" destination="0AE-av-ZXZ" id="7tA-hL-3wB"/>
-                        <outlet property="prototypekp3" destination="BeQ-TD-fMO" id="i3z-kh-EGa"/>
                         <outlet property="startLabel" destination="Yi0-NU-fIS" id="Gl6-EI-p3v"/>
                         <outlet property="stayDurationLabel" destination="DKy-iE-KFF" id="i3R-QT-4Pl"/>
+                        <outlet property="test" destination="uTw-g8-lTf" id="rai-MB-HLo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

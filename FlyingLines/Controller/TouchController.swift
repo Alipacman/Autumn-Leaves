@@ -21,10 +21,8 @@ extension ViewController {
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let touchLocation = touches.first?.location(in: self)
-        moveAnimation(line: createline(), fingerPosition: touchLocation!)
-        
-        
+        let touchLocation2 = touches.first?.location(in: self.view)
+        moveAnimation(line: ArrayViews[Int(randRange(lower: 0, upper: UInt32(ArrayViews.count))) ], fingerPosition: touchLocation2!)
     }
     
     
@@ -32,6 +30,10 @@ extension ViewController {
         // Stop node from moving to touch
         touched = false
     }
+    
+    
+    
+    
     
     
     //Random int& float

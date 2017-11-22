@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,21 +17,7 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leaficon" translatesAutoresizingMaskIntoConstraints="NO" id="udP-mi-9r8">
-                                <rect key="frame" x="106" y="248" width="162" height="171"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="udP-mi-9r8" secondAttribute="height" multiplier="1:1" constant="-9" id="AeE-pG-qp9"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="udP-mi-9r8" secondAttribute="trailing" constant="107" id="GBj-tc-J5m"/>
-                            <constraint firstItem="udP-mi-9r8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="106" id="Hkp-Er-j3X"/>
-                            <constraint firstItem="udP-mi-9r8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="228" id="a4E-ua-Gdu"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="udP-mi-9r8" secondAttribute="bottom" constant="248" id="ojc-6q-wxp"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -41,7 +26,4 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="leaficon" width="389" height="389"/>
-    </resources>
 </document>
