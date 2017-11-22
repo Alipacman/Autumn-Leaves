@@ -7,11 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		059A216507C44C1CDE2D0CA7 /* Pods_FlyingLines.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB572FD300AD162F2112A2C9 /* Pods_FlyingLines.framework */; };
 		41B9467D1FC4691600E5C32A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B9467C1FC4691600E5C32A /* AppDelegate.swift */; };
 		41B9467F1FC4691600E5C32A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B9467E1FC4691600E5C32A /* ViewController.swift */; };
 		41B946821FC4691600E5C32A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41B946801FC4691600E5C32A /* Main.storyboard */; };
 		41B946841FC4691600E5C32A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41B946831FC4691600E5C32A /* Assets.xcassets */; };
 		41B946871FC4691700E5C32A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41B946851FC4691700E5C32A /* LaunchScreen.storyboard */; };
+		41B946911FC48A0B00E5C32A /* Spawner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B946901FC48A0B00E5C32A /* Spawner.swift */; };
+		41C4468C1FC4F14E00B197C8 /* TouchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C4468B1FC4F14E00B197C8 /* TouchController.swift */; };
+		41C4468E1FC4F2C900B197C8 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C4468D1FC4F2C900B197C8 /* Animation.swift */; };
+		41C446901FC4FCF200B197C8 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C4468F1FC4FCF200B197C8 /* OptionsViewController.swift */; };
+		41C446921FC5038200B197C8 /* ForRepair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C446911FC5038200B197C8 /* ForRepair.swift */; };
+		41CD0ABE1FC49A7E00C36CF8 /* Rotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CD0ABD1FC49A7E00C36CF8 /* Rotate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,15 @@
 		41B946831FC4691600E5C32A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41B946861FC4691700E5C32A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41B946881FC4691700E5C32A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41B946901FC48A0B00E5C32A /* Spawner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spawner.swift; sourceTree = "<group>"; };
+		41C4468B1FC4F14E00B197C8 /* TouchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchController.swift; sourceTree = "<group>"; };
+		41C4468D1FC4F2C900B197C8 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		41C4468F1FC4FCF200B197C8 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
+		41C446911FC5038200B197C8 /* ForRepair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForRepair.swift; sourceTree = "<group>"; };
+		41CD0ABD1FC49A7E00C36CF8 /* Rotate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rotate.swift; sourceTree = "<group>"; };
+		B9B7BB832A90D1C10C412A19 /* Pods-FlyingLines.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlyingLines.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlyingLines/Pods-FlyingLines.release.xcconfig"; sourceTree = "<group>"; };
+		DB572FD300AD162F2112A2C9 /* Pods_FlyingLines.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlyingLines.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7A14BB6D6E848656159FFBB /* Pods-FlyingLines.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlyingLines.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlyingLines/Pods-FlyingLines.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				059A216507C44C1CDE2D0CA7 /* Pods_FlyingLines.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +57,8 @@
 			children = (
 				41B9467B1FC4691600E5C32A /* FlyingLines */,
 				41B9467A1FC4691600E5C32A /* Products */,
+				E0CA04255FBBA10DA19D397F /* Pods */,
+				955B3140FA25520790024D93 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +73,53 @@
 		41B9467B1FC4691600E5C32A /* FlyingLines */ = {
 			isa = PBXGroup;
 			children = (
+				41C4468A1FC4F13100B197C8 /* Controller */,
 				41B9467C1FC4691600E5C32A /* AppDelegate.swift */,
-				41B9467E1FC4691600E5C32A /* ViewController.swift */,
 				41B946801FC4691600E5C32A /* Main.storyboard */,
 				41B946831FC4691600E5C32A /* Assets.xcassets */,
 				41B946851FC4691700E5C32A /* LaunchScreen.storyboard */,
 				41B946881FC4691700E5C32A /* Info.plist */,
 			);
 			path = FlyingLines;
+			sourceTree = "<group>";
+		};
+		41C4468A1FC4F13100B197C8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				41B9467E1FC4691600E5C32A /* ViewController.swift */,
+				41B946901FC48A0B00E5C32A /* Spawner.swift */,
+				41C4468D1FC4F2C900B197C8 /* Animation.swift */,
+				41CD0ABD1FC49A7E00C36CF8 /* Rotate.swift */,
+				41C446931FC503F400B197C8 /* Less improtant */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		41C446931FC503F400B197C8 /* Less improtant */ = {
+			isa = PBXGroup;
+			children = (
+				41C4468B1FC4F14E00B197C8 /* TouchController.swift */,
+				41C4468F1FC4FCF200B197C8 /* OptionsViewController.swift */,
+				41C446911FC5038200B197C8 /* ForRepair.swift */,
+			);
+			path = "Less improtant";
+			sourceTree = "<group>";
+		};
+		955B3140FA25520790024D93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB572FD300AD162F2112A2C9 /* Pods_FlyingLines.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0CA04255FBBA10DA19D397F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7A14BB6D6E848656159FFBB /* Pods-FlyingLines.debug.xcconfig */,
+				B9B7BB832A90D1C10C412A19 /* Pods-FlyingLines.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +129,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41B9468B1FC4691700E5C32A /* Build configuration list for PBXNativeTarget "FlyingLines" */;
 			buildPhases = (
+				4BF03080A67C253293C8880B /* [CP] Check Pods Manifest.lock */,
 				41B946751FC4691600E5C32A /* Sources */,
 				41B946761FC4691600E5C32A /* Frameworks */,
 				41B946771FC4691600E5C32A /* Resources */,
+				6D82CF0F1F92244FAA51FBEA /* [CP] Embed Pods Frameworks */,
+				4963D0EB625F1A614F4B027E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +192,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4963D0EB625F1A614F4B027E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlyingLines/Pods-FlyingLines-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BF03080A67C253293C8880B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlyingLines-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D82CF0F1F92244FAA51FBEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FlyingLines/Pods-FlyingLines-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RandomColorSwift/RandomColorSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RandomColorSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlyingLines/Pods-FlyingLines-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		41B946751FC4691600E5C32A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41CD0ABE1FC49A7E00C36CF8 /* Rotate.swift in Sources */,
+				41C4468C1FC4F14E00B197C8 /* TouchController.swift in Sources */,
+				41B946911FC48A0B00E5C32A /* Spawner.swift in Sources */,
+				41C446901FC4FCF200B197C8 /* OptionsViewController.swift in Sources */,
+				41C446921FC5038200B197C8 /* ForRepair.swift in Sources */,
 				41B9467F1FC4691600E5C32A /* ViewController.swift in Sources */,
+				41C4468E1FC4F2C900B197C8 /* Animation.swift in Sources */,
 				41B9467D1FC4691600E5C32A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +393,7 @@
 		};
 		41B9468C1FC4691700E5C32A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7A14BB6D6E848656159FFBB /* Pods-FlyingLines.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -281,12 +403,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = swift.FlyingLines;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		41B9468D1FC4691700E5C32A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9B7BB832A90D1C10C412A19 /* Pods-FlyingLines.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,7 +419,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = swift.FlyingLines;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
